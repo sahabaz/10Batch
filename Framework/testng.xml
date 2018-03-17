@@ -1,0 +1,21 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<listeners>
+	<listener class-name="generic.Listeners"></listener>
+</listeners>
+  <test name="Test1">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="nodeurl" value="http://192.168.1.21:4444/wd/hub/"></parameter>
+    <classes>
+      <class name="script.TestScript"/>
+    </classes>
+  </test> 
+  <test name="Test2">
+  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="nodeurl" value="http://192.168.1.21:4444/wd/hub/"></parameter>
+    <classes>
+      <class name="script.TestScript"/>
+    </classes>
+  </test> 
+</suite> 
